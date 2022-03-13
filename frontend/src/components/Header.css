@@ -12,15 +12,12 @@ a:hover {
   color: grey;
 }
 .form__fo {
-  height: 39px;
   padding: 10px;
   width: 100%;
 }
 .header__logo {
-  height: 40px;
+  height: 50px;
   object-fit: contain;
-  margin: 0 20px;
-  margin-top: 18px;
 }
 .header__search {
   display: flex;
@@ -29,7 +26,7 @@ a:hover {
   border-radius: 24px;
 }
 .header_searchInput {
-  height: 9px;
+  height: 40px;
   padding: 10px;
   width: 100%;
 }
@@ -42,7 +39,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  color: white;
+  color: black;
 }
 .nav {
   display: flex;
@@ -58,8 +55,45 @@ a:hover {
 .header_shopingOption {
   display: flex;
   align-items: center;
-  color: white;
 }
 .headerCounter {
   padding: 10px;
+}
+
+.search-button {
+  height: 40px;
+  color: black;
+  background-color: #07bdff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+}
+
+.ogaysis {
+  align-items: center;
+  height: 30px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #07bdff;
+  column-gap: 15px;
+}
+
+.search-selection > button {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #c1e3e6;
+  color: black;
+  width: 140px;
+}
+
+.search-selection > button:focus {
+  background-color: #07bdff !important;
+}
+
+.search-selection > button:hover {
+  background-color: #07bdff !important;
 }

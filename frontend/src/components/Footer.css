@@ -1,0 +1,14 @@
+.footer-section-1 {
+  background-color: #c1e3e6;
+  height: 100px;
+  width: 100%;
+}
+
+.footer-section-2 {
+  background-color: #07bdff;
+  height: 400px;
+  width: 100%;
+  align-items: end;
+  display: flex;
+  justify-content: center;
+}

@@ -34,13 +34,21 @@ const HomeScreen = ({ match }) => {
           Go Back
         </Link>
       )}
-      <h1>Latest Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <>
+        <div className="products-section">
+          <div className="sale-section">
+            <div className="header">Ka gaar yuusan kaa dhmaan SALE 100%</div>
+          </div>
+          <div className="free-delivery-section">
+            <div className="header">Free delivery in 24 hrs</div>
+          </div>
+          <div className="brands-section">
+            <div className="header">Featured brands</div>
+          </div>
           <Row>
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
@@ -53,7 +61,7 @@ const HomeScreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ""}
           />
-        </>
+        </div>
       )}
     </>
   );
